@@ -69,14 +69,16 @@ const App = () => {
   return (
     <div className="App">
       <div className="container">
-        <div className="header-container">
+        <div className="header-container" >
           <p className="header">Scandinavian Toilets Minter</p>
-          <p className="sub-text">NFTs from the book from Paul Subzak</p>
+          <p className="sub-text">About the Project:</p>
           <p className="text">
-          <strong>About the Project:</strong> Scandinavian Toilets is a collection of over 100 toilets witnessed while living and traveling in Scandinavia (Norway, Sweden, and Denmark) in 2007-2008. 12 handbound book were made and distributed to friends and family in 2010. 
+          Scandinavian Toilets is a collection of over 100 toilets witnessed while living and traveling in Scandinavia (Norway, Sweden, and Denmark) in 2007-2008. 
+          <p className="text">in 2010, 12 handbound book were made and distributed to friends and family in 2010. 
           Each book was hand bound using the coptic binding technique. The front cover was constructed to include a relief print based on two separate toilets, six with a urinal and six with a standard toilet. Each book took approximetly 4-5 hours of work to construct. </p>
-          <p className="text">
-          <strong>How to Mint: </strong>Scandinavian Toilets Series consists of 100 NFTs by Paul Subzak. To mint one of the NFT's connect a phantom wallet to this site. https://phantom.app/ . Transfer some solana to your phantom wallet. To min a Scandinivian Toilet NFT click mint, once minted your NFT will be avalable in the NFT Gallery in your phantom wallet. </p>
+          <p className="text">This project tokenizes each of the 100 toilets into seperate ownable NFTs.</p>
+          <p className="sub-text">How to Mint: </p>
+          To mint one of the NFT's connect a  <a href="https://phantom.app/">Phantom wallet</a>, and transfer some solana to your phantom wallet. To mint a Scandinivian Toilet NFT click mint a toilet, once minted your NFT will be avalable in the NFT Gallery in your phantom wallet. </p>
           {!walletAddress && renderNotConnectedContainer()}
         </div>
         {/* Check for walletAddress and then pass in walletAddress */}
@@ -88,7 +90,7 @@ const App = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`built by @${TWITTER_HANDLE} `}</a>  <p className="text">-in collaboration with buildspace.so</p> 
+          >{`built by @${TWITTER_HANDLE}`}</a>  <p className="text">-in collaboration with buildspace.so</p> 
         </div>
       </div>
     </div>

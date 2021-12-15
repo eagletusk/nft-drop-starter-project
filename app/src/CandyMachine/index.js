@@ -322,17 +322,17 @@ const CandyMachine = ({walletAddress}) => {
   };
 const renderMintedItems = () => (
   <div className="gif-container">
-    <p className="sub-text">Minted Items ✨</p>
+    <p className="sub-text">Minted Toilets </p>
     <div className="gif-grid">
       {mints.map((mint) => (
         <div className="gif-item" key={mint}>
-          <img src={mint} alt={`Minted NFT ${mint}`} />
+          <img src={mint} alt={`Minted Toilets ${mint}`} />
         </div>
       ))}
     </div>
   </div>
   );
-const renderDropTimer = () => {
+  const renderDropTimer = () => {
   const currentDate = new Date();
   const dropDate = new Date(machineStats.goLiveData * 1000);
   return <p>{`Drop Date: ${machineStats.goLiveDateTimeString}`}</p>
@@ -342,8 +342,9 @@ const renderDropTimer = () => {
   return (
     machineStats && (
     <div className="machine-container">
-      {renderDropTimer()}
-      <p>{`Items Minted: ${machineStats.itemsRedeemed} / ${machineStats.itemsAvailable}`}</p>
+      {//renderDropTimer()
+      }
+      <p>{`Toilets Minted: ${machineStats.itemsRedeemed} / ${machineStats.itemsAvailable}`}</p>
       {machineStats.itemsRedeemed === machineStats.itemsAvailable ? (
           <p className="sub-text">Sold Out 🙊</p>
         ) : (
@@ -352,13 +353,13 @@ const renderDropTimer = () => {
             onClick={mintToken}
             disabled={isMinting}
           >
-            Mint NFT
+            Mint a toilet
           </button>
         )}
       {isMinting && (<div className='gif-item'>
           <p>Minting...</p>
       </div>)}
-      {isLoadingMints && <p>Loadind Mints....</p>}
+      {isLoadingMints && <p>Loading toilets....</p>}
       {mints.length > 0 && renderMintedItems()}
     </div>
     )
