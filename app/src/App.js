@@ -4,7 +4,7 @@ import twitterLogo from './assets/twitter-logo.svg';
 import CandyMachine from './CandyMachine';
 
 // Constants
-const TWITTER_HANDLE = '_buildspace';
+const TWITTER_HANDLE = 'eagletusk';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const App = () => {
@@ -70,8 +70,13 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header">🍭 Candy Drops</p>
-          <p className="sub-text">NFT drop machine with fair mint</p>
+          <p className="header">Scandinavian Toilets Minter</p>
+          <p className="sub-text">NFTs from the book from Paul Subzak</p>
+          <p className="text">
+          <strong>About the Project:</strong> Scandinavian Toilets is a collection of over 100 toilets witnessed while living and traveling in Scandinavia (Norway, Sweden, and Denmark) in 2007-2008. 12 handbound book were made and distributed to friends and family in 2010. 
+          Each book was hand bound using the coptic binding technique. The front cover was constructed to include a relief print based on two separate toilets, six with a urinal and six with a standard toilet. Each book took approximetly 4-5 hours of work to construct. </p>
+          <p className="text">
+          <strong>How to Mint: </strong>Scandinavian Toilets Series consists of 100 NFTs by Paul Subzak. To mint one of the NFT's connect a phantom wallet to this site. https://phantom.app/ . Transfer some solana to your phantom wallet. To min a Scandinivian Toilet NFT click mint, once minted your NFT will be avalable in the NFT Gallery in your phantom wallet. </p>
           {!walletAddress && renderNotConnectedContainer()}
         </div>
         {/* Check for walletAddress and then pass in walletAddress */}
@@ -83,7 +88,7 @@ const App = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`built on @${TWITTER_HANDLE}`}</a>
+          >{`built by @${TWITTER_HANDLE} `}</a>  <p className="text">-in collaboration with buildspace.so</p> 
         </div>
       </div>
     </div>
