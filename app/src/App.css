@@ -25,7 +25,7 @@
 }
 
 .header-container {
-  /* background-color: #60c657; */
+   /*background-color: #60c657;*/ 
 }
 
 .header {
@@ -75,7 +75,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: sticky;
   width: 100%;
   bottom: 0;
   left: 0;

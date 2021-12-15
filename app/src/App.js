@@ -75,7 +75,7 @@ const App = () => {
           <p className="text">
           Scandinavian Toilets is a collection of over 100 toilets witnessed while living and traveling in Scandinavia (Norway, Sweden, and Denmark) in 2007-2008. 
           <p className="text">in 2010, 12 handbound book were made and distributed to friends and family in 2010. 
-          Each book was hand bound using the coptic binding technique. The cover was constructed to include a relief print based on two separate toilets, six with a urinal and six with a standard toilet. Each book took approximetly 4-5 hours of work to construct. </p>
+          Each book was hand bound using the coptic binding technique. The gitcover was constructed to include a relief print based on two separate toilets, six with a urinal and six with a standard toilet. Each book took approximetly 4-5 hours of work to construct. </p>
           <p className="text">This project tokenizes each of the 100 toilets into seperate ownable NFTs.</p>
           <p className="sub-text">How to Mint: </p>
           To mint one of the NFT's connect a  <a href="https://phantom.app/">Phantom wallet</a>, and transfer some solana to your phantom wallet. To mint a Scandinivian Toilet NFT click mint a toilet, once minted your NFT will be avalable in the NFT Gallery in your phantom wallet. </p>
