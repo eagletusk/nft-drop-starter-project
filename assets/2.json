@@ -1,9 +1,21 @@
 {
-    "name": "Scandinavin Toilets",
-    "symbol": "",
+    "name": "Scandinavin Toilets 2",
+    "symbol": "SCANT",
+    "description": "Scandinavin Toilets by Paul Subzak",
     "image": "2.png",
+    "seller_fee_basis_points": 500,
+    "attributes": [
+      {
+        "trait_type": "Location",
+        "value": "Jernbanetorget, Tromsø, Norway"
+      },
+      {
+        "trait_type": "Date Taken",
+        "value": "2007:10:01 20:47:32"
+      }
+    ],
     "properties": {
-      "files": [
+       "files": [
         {
           "uri": "2.png",
           "type": "image/png"
@@ -11,7 +23,7 @@
       ],
       "creators": [
         {
-          "address": "ENhsUDMF8GtMed68qxsoAZtkf4Y8aj2jyJ4ADAcdFZ6F",
+          "address": "6Z6SexX2UhgVtjk49hn2WdxkwD9F8NNY5b2Y71eXsKnZ",
           "share": 100
         }
       ]

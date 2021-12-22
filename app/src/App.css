@@ -17,6 +17,10 @@
   /* background-color: #35aee2; */
 }
 
+.machine-container {
+  display: flex;
+  flex-direction: column;
+}
 .authed-container {
   height: 100%;
   display: flex;

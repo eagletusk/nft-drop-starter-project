@@ -1,19 +1,31 @@
 {
-    "name": "Scandinavin Toilets",
-    "symbol": "",
-    "image": "0.png",
-    "properties": {
-      "files": [
-        {
-          "uri": "0.png",
-          "type": "image/png"
-        }
-      ],
-      "creators": [
-        {
-          "address": "ENhsUDMF8GtMed68qxsoAZtkf4Y8aj2jyJ4ADAcdFZ6F",
-          "share": 100
-        }
-      ]
+  "name": "Scandinavin Toilets 0",
+  "symbol": "SCANT",
+  "description": "Scandinavin Toilets by Paul Subzak",
+  "image": "0.png",
+  "seller_fee_basis_points": 500,
+  "attributes": [
+    {
+      "trait_type": "Location",
+      "value": "Oslo Airport, Oslo, Norway"
+    },
+    {
+      "trait_type": "Date Taken",
+      "value": "2007:10:01 13:52:08"
     }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "0.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "6Z6SexX2UhgVtjk49hn2WdxkwD9F8NNY5b2Y71eXsKnZ",
+        "share": 100
+      }
+    ]
   }
+}

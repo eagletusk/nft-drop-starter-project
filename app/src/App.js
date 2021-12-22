@@ -70,15 +70,22 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container" >
-          <p className="header">Scandinavian Toilets Minter</p>
-          <p className="sub-text">About the Project:</p>
+          <p className="header">Scandinavian Toilets Minter 🚽</p>
+          by <a className="footer-text" href ="https://www.paulsubzak.com"> Paul Subzak</a>
           <p className="text">
-          Scandinavian Toilets is a collection of over 100 toilets witnessed while living and traveling in Scandinavia (Norway, Sweden, and Denmark) in 2007-2008. 
-          <p className="text">in 2010, 12 handbound book were made and distributed to friends and family in 2010. 
-          Each book was hand bound using the coptic binding technique. The gitcover was constructed to include a relief print based on two separate toilets, six with a urinal and six with a standard toilet. Each book took approximetly 4-5 hours of work to construct. </p>
-          <p className="text">This project tokenizes each of the 100 toilets into seperate ownable NFTs.</p>
+          Scandinavian Toilets is a tokenized collection of 117 toilets witnessed by Paul Subzak while living and traveling in Scandinavia in 2007-2008.
+          <p className="text">This project is an extension of the <a className="footer-text" href="http://web.archive.org/web/20151225184839/http://themountainfold.com/?page_id=657#1" >Scandinavian Toilets Book</a> that was published in 2010, where 12 handbound books were created featuring all 117 toilets, and gifted to friends and family.
+          Each of the 12 books were hand bound using the coptic binding technique, and feature a relief print on the cover. All books were individually numbered and signed, no further editions will be made. </p>
+          <p className="text">The Scandinavian Toilets Minter tokenizes each of the 117 toilets into separate ownable Toilet NFTs.</p>
+          <p className="text">Each Toilet NFT comes individually numbered along with the location witnessed in Scandinavia, and the original date taken as attributes.</p>
           <p className="sub-text">How to Mint: </p>
-          To mint one of the NFT's connect a  <a href="https://phantom.app/">Phantom wallet</a>, and transfer some solana to your phantom wallet. To mint a Scandinivian Toilet NFT click mint a toilet, once minted your NFT will be avalable in the NFT Gallery in your phantom wallet. </p>
+          To mint connect a <a target="_blank"
+        rel="noreferrer"
+        className="footer-text"
+        href ="https://phantom.app/">Phantom wallet</a>, and transfer some sol to your wallet.
+          Once connected the "mint a toilet" button will appear, after minting your Toilet NFT will be available in the NFT Gallery in your Phantom wallet. </p>
+ 
+          <p className="text">Mint Price: 0.01 sol</p>
           {!walletAddress && renderNotConnectedContainer()}
         </div>
         {/* Check for walletAddress and then pass in walletAddress */}
@@ -90,11 +97,23 @@ const App = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`built by @${TWITTER_HANDLE}`}</a>  <p className="text">-in collaboration with buildspace.so</p> 
+          >{`built by @${TWITTER_HANDLE}  `}</a>  <p className="text">-in collaboration with-</p>
+          <a
+          className="footer-text"
+          href="http://roboglobo.co"
+          target="_blank"
+          rel="noreferrer"
+        >{` Robo Globo `}</a><p className="text"> 🤖🌎 and 🦄 </p>
+        <a
+        target="_blank"
+        rel="noreferrer"
+        className="footer-text"
+        href="http://Buildspace.so"> {`Buildspace.so`}</a>
         </div>
       </div>
     </div>
   );
+
 };
 
 export default App;

@@ -1,19 +1,20 @@
 {
-    "name": "Scandinavin Toilets",
-    "symbol": "",
-    "image": "1.png",
-    "properties": {
-      "files": [
-        {
-          "uri": "1.png",
-          "type": "image/png"
-        }
-      ],
-      "creators": [
-        {
-          "address": "ENhsUDMF8GtMed68qxsoAZtkf4Y8aj2jyJ4ADAcdFZ6F",
-          "share": 100
-        }
-      ]
-    }
+  "name": "Scandinavin Toilets 1",
+  "symbol": "SCANT",
+  "description": "Scandinavin Toilets by Paul Subzak",
+  "image": "1.png",
+  "seller_fee_basis_points": 500,
+  "attributes": [
+    { "trait_type": "Location", "value": "Unknown Bar, Tromsø, Norway" },
+    { "trait_type": "Date Taken", "value": "2007:10:01 18:30:37" }
+  ],
+  "properties": {
+    "files": [{ "uri": "1.png", "type": "image/png" }],
+    "creators": [
+      {
+        "address": "6Z6SexX2UhgVtjk49hn2WdxkwD9F8NNY5b2Y71eXsKnZ",
+        "share": 100
+      }
+    ]
   }
+}

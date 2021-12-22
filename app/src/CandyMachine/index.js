@@ -322,7 +322,7 @@ const CandyMachine = ({walletAddress}) => {
   };
 const renderMintedItems = () => (
   <div className="gif-container">
-    <p className="sub-text">Minted Toilets </p>
+    <p className="sub-text">Minted Toilets:</p>
     <div className="gif-grid">
       {mints.map((mint) => (
         <div className="gif-item" key={mint}>
@@ -342,11 +342,9 @@ const renderMintedItems = () => (
   return (
     machineStats && (
     <div className="machine-container">
-      {//renderDropTimer()
-      }
       <p>{`Toilets Minted: ${machineStats.itemsRedeemed} / ${machineStats.itemsAvailable}`}</p>
       {machineStats.itemsRedeemed === machineStats.itemsAvailable ? (
-          <p className="sub-text">Sold Out 🙊</p>
+          <p className="sub-text">All toilets have been minted 🚽</p>
         ) : (
           <button
             className="cta-button mint-button"
@@ -354,7 +352,7 @@ const renderMintedItems = () => (
             disabled={isMinting}
           >
             Mint a toilet
-          </button>
+          </button>          
         )}
       {isMinting && (<div className='gif-item'>
           <p>Minting...</p>
