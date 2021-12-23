@@ -1,6 +1,9 @@
 {
   "name": "Scandinavin Toilets 0",
   "symbol": "SCANT",
+  "collection": {
+    "name": "Scandinavin Toilets"
+  },
   "description": "Scandinavin Toilets by Paul Subzak",
   "image": "0.png",
   "seller_fee_basis_points": 500,

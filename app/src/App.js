@@ -73,19 +73,17 @@ const App = () => {
           <p className="header">Scandinavian Toilets Minter 🚽</p>
           by <a className="footer-text" href ="https://www.paulsubzak.com"> Paul Subzak</a>
           <p className="text">
-          Scandinavian Toilets is a tokenized collection of 117 toilets witnessed by Paul Subzak while living and traveling in Scandinavia in 2007-2008.
-          <p className="text">This project is an extension of the <a className="footer-text" href="http://web.archive.org/web/20151225184839/http://themountainfold.com/?page_id=657#1" >Scandinavian Toilets Book</a> that was published in 2010, where 12 handbound books were created featuring all 117 toilets, and gifted to friends and family.
-          Each of the 12 books were hand bound using the coptic binding technique, and feature a relief print on the cover. All books were individually numbered and signed, no further editions will be made. </p>
-          <p className="text">The Scandinavian Toilets Minter tokenizes each of the 117 toilets into separate ownable Toilet NFTs.</p>
-          <p className="text">Each Toilet NFT comes individually numbered along with the location witnessed in Scandinavia, and the original date taken as attributes.</p>
+          Scandinavian Toilets is a tokenized collection of 117 toilets witnessed by Paul Subzak while living and traveling in Scandinavia in 2007-2008.<p></p>
+          Each Toilet NFT comes individually numbered along with the location witnessed in Scandinavia, and the original date taken as attributes.<p></p>
+          This project is an extension of the <a className="footer-text" href="http://web.archive.org/web/20151225184839/http://themountainfold.com/?page_id=657#1" > Scandinavian Toilets Book </a>that was published in 2010, where 12 handbound books were created featuring all 117 toilets, and gifted to friends and family.
+          Each of the 12 books were hand bound using the coptic binding technique, and feature a relief print on the cover. All books were individually numbered and signed, no further editions will be made.
           <p className="sub-text">How to Mint: </p>
-          To mint connect a <a target="_blank"
+          Connect a <a target="_blank"
         rel="noreferrer"
         className="footer-text"
-        href ="https://phantom.app/">Phantom wallet</a>, and transfer some sol to your wallet.
-          Once connected the "mint a toilet" button will appear, after minting your Toilet NFT will be available in the NFT Gallery in your Phantom wallet. </p>
+        href ="https://phantom.app/">Phantom wallet</a> click the "Mint a toilet" button. After minting your Toilet NFT will be available in the NFT Gallery of your Phantom wallet.</p>
  
-          <p className="text">Mint Price: 0.01 sol</p>
+          <p className="sub-text">Mint Price: 0.01 sol + minting fees</p> 
           {!walletAddress && renderNotConnectedContainer()}
         </div>
         {/* Check for walletAddress and then pass in walletAddress */}
