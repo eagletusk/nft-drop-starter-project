@@ -42,11 +42,24 @@
   font-size: 25px;
 }
 
-.gradient-text {
-  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+.linear-wipe {  
+  background: linear-gradient(-45deg, #ff8867, #ff8867, #ff52ff, #ff52ff);
+	background-size: 300%;
+	text-transform: uppercase;
+  font-weight: 900;
+	font-size: 5vw;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 5s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
+}
+
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
 }
 
 .cta-button {
@@ -69,7 +82,7 @@
 }
 
 .mint-button {
-  background: -webkit-linear-gradient(left, #4e44ce, #35aee2);
+  background: -webkit-linear-gradient(left, #ff8867, #ff52ff);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
   margin-left: 10px;
@@ -148,3 +161,4 @@
     background-position: 0% 50%;
   }
 }
+

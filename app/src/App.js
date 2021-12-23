@@ -70,7 +70,7 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container" >
-          <p className="header">Scandinavian Toilets Minter 🚽</p>
+          <h1 className="linear-wipe">Scandinavian Toilets Minter 🚽</h1>
           by <a className="footer-text" href ="https://www.paulsubzak.com"> Paul Subzak</a>
           <p className="text">
           Scandinavian Toilets is a tokenized collection of 117 toilets witnessed by Paul Subzak while living and traveling in Scandinavia in 2007-2008.<p></p>
@@ -84,10 +84,15 @@ const App = () => {
         href ="https://phantom.app/">Phantom wallet</a> click the "Mint a toilet" button. After minting your Toilet NFT will be available in the NFT Gallery of your Phantom wallet.</p>
  
           <p className="sub-text">Mint Price: 0.01 sol + minting fees</p> 
+          
           {!walletAddress && renderNotConnectedContainer()}
         </div>
+
+
         {/* Check for walletAddress and then pass in walletAddress */}
       {walletAddress && <CandyMachine walletAddress={window.solana} />}
+
+
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a

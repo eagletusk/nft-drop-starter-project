@@ -332,11 +332,11 @@ const renderMintedItems = () => (
     </div>
   </div>
   );
-  const renderDropTimer = () => {
-  const currentDate = new Date();
-  const dropDate = new Date(machineStats.goLiveData * 1000);
-  return <p>{`Drop Date: ${machineStats.goLiveDateTimeString}`}</p>
-}
+//   const renderDropTimer = () => {
+//   const currentDate = new Date();
+//   const dropDate = new Date(machineStats.goLiveData * 1000);
+//   return <p>{`Drop Date: ${machineStats.goLiveDateTimeString}`}</p>
+// }
 
 
   return (
@@ -347,7 +347,7 @@ const renderMintedItems = () => (
           <p className="sub-text">All toilets have been minted 🚽</p>
         ) : (
           <button
-            className="cta-button mint-button"
+            className="cta-button connect-wallet-button"
             onClick={mintToken}
             disabled={isMinting}
           >
