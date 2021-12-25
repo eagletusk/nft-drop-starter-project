@@ -357,7 +357,7 @@ const renderMintedItems = () => (
       {isMinting && (<div className='gif-item'>
           <p>Minting...</p>
       </div>)}
-      {isLoadingMints && <p>Loading toilets....</p>}
+      {isLoadingMints && <p className="linear-wipe2">Loading toilets...</p>}
       {mints.length > 0 && renderMintedItems()}
     </div>
     )
