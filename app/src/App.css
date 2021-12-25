@@ -1,14 +1,14 @@
 .App {
   height: 100vh;
   background-color: rgb(20, 20, 20);
-  overflow: scroll;
+  overflow: auto;
   text-align: left;
-  overflow: hidden;
+  /* overflow: hidden;  */
 }
 
 .container {
   height: 100%;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   padding: 0 30px 0 30px;
@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .authed-container {
   height: 100%;
   display: flex;
@@ -33,6 +34,7 @@
 }
 
 .header {
+  padding-top: 45px; 
   margin: 0;
   font-size: 50px;
   font-weight: bold;
@@ -41,7 +43,6 @@
 .sub-text {
   font-size: 25px;
 }
-
 
 .linear-wipe {  
   background: linear-gradient(-45deg, #ff8867, #ff8867, #ff52ff, #ff52ff);
@@ -89,14 +90,14 @@
 }
 
 .footer-container {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
-  position: sticky;
+  /* position: sticky; */
   width: 100%;
   bottom: 0;
   left: 0;
-  /* padding-bottom: 45px; */
+  padding-bottom: 45px; 
 }
 
 .twitter-logo {
