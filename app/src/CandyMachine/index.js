@@ -265,7 +265,8 @@ const CandyMachine = ({walletAddress}) => {
   useEffect(() => {
     getCandyMachineState();
   },[]);
-  const getProvider = () => {
+
+    const getProvider = () => {
     const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST;
     const connection = new Connection(rpcHost);
 
@@ -281,8 +282,7 @@ const CandyMachine = ({walletAddress}) => {
     const idl = await Program.fetchIdl(candyMachineProgram, provider);
     const program = new Program(idl, candyMachineProgram, provider);
     const candyMachine = await program.account.candyMachine.fetch(
-
-      process.env.REACT_APP_CANDY_MACHINE_ID
+    process.env.REACT_APP_CANDY_MACHINE_ID
     );
       const itemsAvailable = candyMachine.data.itemsAvailable.toNumber();
       const itemsRedeemed = candyMachine.itemsRedeemed.toNumber();
@@ -302,6 +302,7 @@ const CandyMachine = ({walletAddress}) => {
         goLiveData,
         goLiveDateTimeString,
       });
+
       setIsLoadingMints(true);
       const data = await fetchHashTable(
         process.env.REACT_APP_CANDY_MACHINE_ID,
@@ -320,6 +321,7 @@ const CandyMachine = ({walletAddress}) => {
       }
       setIsLoadingMints(false);
   };
+
 const renderMintedItems = () => (
   <div className="gif-container">
     <p className="sub-text">Minted Toilets:</p>
@@ -360,13 +362,7 @@ const renderMintedItems = () => (
       {isLoadingMints && <p className="linear-wipe2">Loading toilets...</p>}
       {mints.length > 0 && renderMintedItems()}
     </div>
-    ),
-    machineStats && (
-      <div className="machine-container2">
-        {isLoadingMints && <p className="linear-wipe2">Loading toilets...</p>}
-        {renderMintedItems()}
-      </div>
-      )
+    )
   );
 };
 
