@@ -29,7 +29,7 @@ const MAX_URI_LENGTH = 200;
 const MAX_SYMBOL_LENGTH = 10;
 const MAX_CREATOR_LEN = 32 + 1 + 1;
 
-const CandyMachine = ({walletAddress}) => {
+const CandyMachine2 = () => {
   const [machineStats, setMachineStats] = useState(null);
   const [mints, setMints] = useState([]);
   const [isMinting, setIsMinting] = useState(false);
@@ -135,7 +135,7 @@ const CandyMachine = ({walletAddress}) => {
 
       const accounts = {
         config,
-        candyMachine: process.env.REACT_APP_CANDY_MACHINE_ID,
+        candyMachine2: process.env.REACT_APP_CANDY_MACHINE_ID,
         payer: walletAddress.publicKey,
         wallet: process.env.REACT_APP_TREASURY_ADDRESS,
         mint: mint.publicKey,
@@ -265,7 +265,8 @@ const CandyMachine = ({walletAddress}) => {
   useEffect(() => {
     getCandyMachineState();
   },[]);
-  const getProvider = () => {
+
+    const getProvider = () => {
     const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST;
     const connection = new Connection(rpcHost);
 
@@ -280,14 +281,13 @@ const CandyMachine = ({walletAddress}) => {
     const provider = getProvider();
     const idl = await Program.fetchIdl(candyMachineProgram, provider);
     const program = new Program(idl, candyMachineProgram, provider);
-    const candyMachine = await program.account.candyMachine.fetch(
-
-      process.env.REACT_APP_CANDY_MACHINE_ID
+    const candyMachine2 = await program.account.candyMachine2.fetch(
+    process.env.REACT_APP_CANDY_MACHINE_ID
     );
-      const itemsAvailable = candyMachine.data.itemsAvailable.toNumber();
-      const itemsRedeemed = candyMachine.itemsRedeemed.toNumber();
+      const itemsAvailable = candyMachine2.data.itemsAvailable.toNumber();
+      const itemsRedeemed = candyMachine2.itemsRedeemed.toNumber();
       const itemsRemaining = itemsAvailable - itemsRedeemed;
-      const goLiveData = candyMachine.data.goLiveDate.toNumber();
+      const goLiveData = candyMachine2.data.goLiveDate.toNumber();
 
       const goLiveDateTimeString = `${new Date(
         goLiveData * 1000
@@ -302,6 +302,7 @@ const CandyMachine = ({walletAddress}) => {
         goLiveData,
         goLiveDateTimeString,
       });
+
       setIsLoadingMints(true);
       const data = await fetchHashTable(
         process.env.REACT_APP_CANDY_MACHINE_ID,
@@ -320,6 +321,7 @@ const CandyMachine = ({walletAddress}) => {
       }
       setIsLoadingMints(false);
   };
+
 const renderMintedItems = () => (
   <div className="gif-container">
     <p className="sub-text">Minted Toilets:</p>
@@ -370,4 +372,4 @@ const renderMintedItems = () => (
   );
 };
 
-export default CandyMachine;
+export default CandyMachine2;

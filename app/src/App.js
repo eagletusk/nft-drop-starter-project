@@ -86,7 +86,7 @@ const App = () => {
           {!walletAddress && renderNotConnectedContainer()}
         </div>
         {/* Check for walletAddress and then pass in walletAddress */}
-        {walletAddress && <CandyMachine walletAddress={window.solana} />} 
+        {walletAddress && <CandyMachine walletAddress={window.solana} />}
         <div className="footer-container">
         </div>
       </div>

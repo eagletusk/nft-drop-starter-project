@@ -359,7 +359,7 @@ const renderMintedItems = () => (
       {isMinting && (<div className='gif-item'>
           <p>Minting...</p>
       </div>)}
-      {isLoadingMints && <p className="linear-wipe2">Loading toilets...</p>}
+      {isLoadingMints && <p className="linear-wipe2">Loading toilets... (Takes a minute or two to fetch from Arweave where the images live on the blockchain)</p>}
       {mints.length > 0 && renderMintedItems()}
     </div>
     )
